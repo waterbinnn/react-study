@@ -5,6 +5,11 @@ const Timer = (props) => {
     const timer = setInterval(() => {
       console.log("타이머 돌아가는중");
     }, 1000);
+
+    return () => {
+      clearInterval(timer);
+      console.log("타이머가 종료되었습니다.");
+    };
   }, []);
 
   return (
