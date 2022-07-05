@@ -1,8 +1,20 @@
 import { useState, useEffect } from "react";
-import Timer from "../components/Timer";
 
-function App() {
+function Time() {
   const [showTimer, setShowTimer] = useState(false);
+
+  const Timer = (props) => {
+    useEffect(() => {
+      const timer = setInterval(() => {
+        console.log("타이머 실행중");
+      }, 1000);
+
+      return () => {
+        clearInterval(timer);
+        console.log("end");
+      };
+    }, []);
+  };
 
   return (
     <div>
@@ -13,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Time;
