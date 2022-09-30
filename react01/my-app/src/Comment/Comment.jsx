@@ -3,7 +3,8 @@ import React from "react";
 function Comment(props) {
   return (
     <div>
-      <h1>Comment Component</h1>
+      <h1>{props.name}</h1>
+      <p>{props.comment}</p>
     </div>
   );
 }
