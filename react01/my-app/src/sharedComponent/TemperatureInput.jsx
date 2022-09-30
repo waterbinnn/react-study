@@ -5,7 +5,7 @@ const scaleNames = {
   f: "화씨",
 };
 
-export default function temperatureInput(props) {
+export default function TemperatureInput(props) {
   //사용자가 온도값을 변경할때 마다 props에 있는 onTemperatureChange 함수를 통해 변경된 온도값이 상위 컴포넌트로 전달된다.
   const handleChange = (event) => {
     props.onTemperatureChange(event.target.value);

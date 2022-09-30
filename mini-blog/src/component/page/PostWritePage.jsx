@@ -11,12 +11,11 @@ width: calc(100% - 32px);
   flex-direction: column;
   align-item: center;
   justify-content: center;
-  }
 `;
 
 const Container = styled.div`
   width: 100%;
-  max-widthj: 720px;
+  max-width: 720px;
 
   & > * {
     :not(:last-child) {

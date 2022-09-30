@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-item: center;
   justify-content: center;
-  }
+
 `;
 
 const Container = styled.div`
